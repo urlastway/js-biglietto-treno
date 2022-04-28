@@ -6,10 +6,10 @@ const km = Number(prompt("Quanti km vuoi percorrere?"))
 const price = 0.21
 let sumprice = km * price
 if (age > 18){
-    sumprice = sumprice - (sumprice % 100 * 20)
+    sumprice = sumprice - (sumprice / 100 * 20)
 }
 else if (age <= 65){
-    sumprice = sumprice - (sumprice % 100 * 40)
+    sumprice = sumprice - (sumprice / 100 * 40)
 }
 else {
     sumprice = sumprice
